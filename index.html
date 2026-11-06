@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Interview Bootcamp · LPI 701-200 + LFCS, Terraform y Kubernetes</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Abrir menú">☰</button>
+    <div class="brand">
+      <div class="brand-mark">&gt;_</div>
+      <div>
+        <h1>DevOps Interview Bootcamp</h1>
+        <p>5 días · LPI 701-200 + LFCS, Terraform y Kubernetes</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span class="pill" id="pill-day">Día 1 / 5</span>
+      <span class="pill pill-fire" id="pill-streak" title="Días consecutivos de estudio">🔥 0</span>
+      <span class="pill" id="pill-xp" title="Experiencia acumulada">0 XP</span>
+      <button class="icon-btn" id="btn-help" title="Cómo funciona la plataforma">?</button>
+    </div>
+  </header>
+
+  <div class="shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="side-progress">
+        <div class="side-progress-top">
+          <span class="side-label">PROGRESO GLOBAL</span>
+          <span class="side-pct" id="side-pct">0%</span>
+        </div>
+        <div class="bar"><i id="side-bar" style="width:0%"></i></div>
+        <p class="side-note" id="side-note">Sin actividad todavía</p>
+      </div>
+      <nav class="nav" id="main-nav">
+        <a href="#/dashboard" data-route="dashboard"><span>▣</span> Panel</a>
+        <a href="#/roadmap" data-route="roadmap"><span>⤳</span> Ruta de aprendizaje</a>
+        <a href="#/review" data-route="review"><span>⟳</span> Repaso espaciado <b class="nav-count" id="nav-due">0</b></a>
+        <a href="#/labs" data-route="labs"><span>⌘</span> Laboratorios</a>
+        <a href="#/terminal" data-route="terminal"><span>▸</span> Terminal</a>
+        <a href="#/troubleshoot" data-route="troubleshoot"><span>⚑</span> Troubleshooting</a>
+        <a href="#/interview" data-route="interview"><span>◇</span> Simulador de entrevista</a>
+        <a href="#/tutor" data-route="tutor"><span>✦</span> Tutor</a>
+        <a href="#/analytics" data-route="analytics"><span>▤</span> Analítica</a>
+        <a href="#/library" data-route="library"><span>▤</span> Biblioteca Linux</a>
+        <a href="#/notes" data-route="notes"><span>✎</span> Notas y chuletas</a>
+        <a href="#/project" data-route="project"><span>⛁</span> Proyecto final</a>
+        <a href="#/settings" data-route="settings"><span>⚙</span> Ajustes</a>
+      </nav>
+      <div class="side-focus">
+        <span class="side-label">OBJETIVO DE HOY</span>
+        <p id="side-goal">Completá el día 1 del currículo.</p>
+      </div>
+    </aside>
+
+    <main class="view" id="view" tabindex="-1"></main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <div class="modal" id="modal" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <noscript><p style="padding:2rem">Esta aplicación necesita JavaScript habilitado.</p></noscript>
+
+  <script src="js/data/linux-course.js"></script>
+  <script src="js/data/curriculum.js"></script>
+  <script src="js/data/curriculum-lpi.js"></script>
+  <script src="js/data/flashcards.js"></script>
+  <script src="js/data/interview.js"></script>
+  <script src="js/data/labs.js"></script>
+  <script src="js/core/md.js"></script>
+  <script src="js/core/store.js"></script>
+  <script src="js/core/terminal.js"></script>
+  <script src="js/core/ai.js"></script>
+  <script src="js/ui/app.js"></script>
+</body>
+</html>
