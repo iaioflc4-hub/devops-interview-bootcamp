@@ -35,7 +35,7 @@ Con Node.js instalado:
 node tools/validate.js
 ```
 
-Debe terminar con `OK: todas las validaciones pasaron.` y mostrar 29 módulos, 139 tarjetas, 150 preguntas, 31 laboratorios y 12 escenarios.
+Debe terminar con `OK: todas las validaciones pasaron.` y mostrar 29 módulos, 145 tarjetas, 150 preguntas, 31 laboratorios y 12 escenarios.
 
 ## 3. Preparar el entorno para misiones reales (opcional)
 

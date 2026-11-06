@@ -13,7 +13,7 @@ Fecha del análisis: noviembre de 2026. Los esfuerzos son estimaciones para **un
 | Chequeo | Resultado |
 | --- | --- |
 | `node --check` sobre los 10 scripts | OK |
-| `node tools/validate.js` | OK · 29 módulos · 139 tarjetas · 150 preguntas · 31 labs · 12 escenarios |
+| `node tools/validate.js` | OK · 29 módulos · 145 tarjetas · 150 preguntas · 31 labs · 12 escenarios |
 | Cobertura LPI y pesos | OK · 15/15 objetivos · pesos 20+13+13+14 = 60 |
 | Chrome headless sobre `#/dashboard` | OK · renderiza "Día 1 de 5" y "Fundamentos Linux (LFCS)" |
 | Chrome headless sobre `#/roadmap` | OK · 29 módulos y etiquetas de dominio |

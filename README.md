@@ -4,6 +4,8 @@ Plataforma local de entrenamiento intensivo para entrevistas de **Trainee / Juni
 
 Funciona **sin backend, sin build y sin costo**: es una SPA estática que se abre en el navegador y guarda todo en `localStorage`. La IA es opcional.
 
+**Demo en vivo:** https://iaioflc4-hub.github.io/devops-interview-bootcamp/
+
 ---
 
 ## Inicio rápido
@@ -27,7 +29,7 @@ Requisitos: navegador moderno (Chrome/Edge/Firefox). Node.js solo hace falta par
 | --- | --- | --- |
 | Módulos | 29 | Cinco bloques: LFCS, 701 ingeniería, 702 contenedores, 703 Kubernetes + Terraform, 704 seguridad y observabilidad |
 | Objetivos LPI 701-200 | 15/15 | Dominios 701, 702, 703 y 704 cubiertos con pesos oficiales (60 puntos) |
-| Tarjetas de repaso | 139 | Motor SM-2 adaptado al plan intensivo, con intervalos cortos |
+| Tarjetas de repaso | 145 | Motor SM-2 adaptado al plan intensivo, con intervalos cortos |
 | Preguntas de entrevista | 150 | Abiertas, multiple choice, comandos, escenarios, YAML y diseño |
 | Laboratorios | 31 | Terminal simulado, misiones reales validadas y ejercicios guiados |
 | Escenarios de troubleshooting | 12 | Incidentes con evidencia, causa raíz y resolución |
@@ -92,13 +94,14 @@ js/core/ai.js               Adaptador opcional compatible con OpenAI
 js/ui/app.js                Router y todas las vistas
 js/data/curriculum.js       5 bloques y 20 módulos base + chuletas
 js/data/curriculum-lpi.js   Ampliación LPI 701-200: 9 módulos nuevos y mapa de objetivos
-js/data/flashcards.js       139 tarjetas
+js/data/flashcards.js       145 tarjetas
 js/data/interview.js        150 preguntas
 js/data/labs.js             31 laboratorios, 12 escenarios y proyecto
 js/data/linux-course.js     Biblioteca extraída del HTML original (generada)
 tools/extract-course.js     Regenera la biblioteca desde Curso_Linux_UTN.html
 tools/validate.js           Valida datos, SM-2 y labs de terminal
-docs/                       INSTALLATION, ARCHITECTURE, LAB_GUIDE, SECURITY, TROUBLESHOOTING, PUBLISHING
+INSTALLATION.md, ARCHITECTURE.md, LAB_GUIDE.md,
+SECURITY.md, TROUBLESHOOTING.md, PUBLISHING.md   Documentación y guía de publicación
 ```
 
 Verificación:
@@ -107,7 +110,7 @@ Verificación:
 node tools/validate.js
 ```
 
-Comprueba integridad de referencias, cobertura de los 15 objetivos LPI y pesos (60), 139 tarjetas, 150 preguntas, 31 labs, 12 escenarios, regex de validación, SM-2 (intervalos y persistencia), Markdown y los 4 laboratorios de terminal de punta a punta.
+Comprueba integridad de referencias, cobertura de los 15 objetivos LPI y pesos (60), 145 tarjetas, 150 preguntas, 31 labs, 12 escenarios, regex de validación, SM-2 (intervalos y persistencia), Markdown y los 4 laboratorios de terminal de punta a punta.
 
 ---
 

@@ -115,4 +115,4 @@ python -m http.server 8080
 node tools/validate.js
 ```
 
-Debe imprimir el resumen (29 módulos, 139 tarjetas, 150 preguntas, 31 labs, 12 escenarios) y terminar en `OK: todas las validaciones pasaron.` Si hay errores, indican el id exacto del dato o del lab afectado.
+Debe imprimir el resumen (29 módulos, 145 tarjetas, 150 preguntas, 31 labs, 12 escenarios) y terminar en `OK: todas las validaciones pasaron.` Si hay errores, indican el id exacto del dato o del lab afectado.
