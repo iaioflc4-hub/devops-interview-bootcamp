@@ -101,7 +101,7 @@ js/data/linux-course.js     Biblioteca extraída del HTML original (generada)
 tools/extract-course.js     Regenera la biblioteca desde Curso_Linux_UTN.html
 tools/validate.js           Valida datos, SM-2 y labs de terminal
 INSTALLATION.md, ARCHITECTURE.md, LAB_GUIDE.md,
-SECURITY.md, TROUBLESHOOTING.md, PUBLISHING.md   Documentación y guía de publicación
+SECURITY.md, TROUBLESHOOTING.md   Documentación y guía de uso
 ```
 
 Verificación:
@@ -135,7 +135,7 @@ Ver `SECURITY.md` para el detalle.
 6. La biblioteca Linux es material del curso original: se ofrece como referencia, no como parte evaluada del plan DevOps.
 7. El plan pasó de 4 a 5 días. Un backup viejo migra `planDays` automáticamente al cargarse.
 8. Los laboratorios nuevos de LVM, timers, licencias, Helm, logs y trazas son guiados o manuales: el terminal simulado no implementa esas herramientas.
-9. Se puede compartir el contenido por web o empaquetar como app Android sin reescribir la app; ver `PUBLISHING.md` para el análisis y las etapas.
+9. Se puede compartir el contenido por web o empaquetar como app Android sin reescribir la app, porque no hay backend ni build.
 
 ---
 
@@ -151,5 +151,6 @@ Revisé proyectos open source parecidos y adopté ideas que encajan con esta pla
 
 ## Material de origen
 
-- `DepOpsApp.txt`: especificación funcional de la plataforma.
-- `Curso_Linux_UTN.html`: manual del Diplomado Linux UTN-FRD. `tools/extract-course.js` extrae sus 24 clases a `js/data/linux-course.js`; regeneralo con `node tools/extract-course.js`.
+- `js/data/linux-course.js` es la extracción de 24 clases del manual del Diplomado Linux UTN-FRD.
+- El HTML original del curso y la especificación funcional de la plataforma no se distribuyen en este repositorio: quedan como referencia local excluida en `.gitignore`.
+- Para regenerar la biblioteca, colocá `Curso_Linux_UTN.html` en la raíz y ejecutá `node tools/extract-course.js`.
